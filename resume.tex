@@ -1,0 +1,91 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Luo Jia}
+
+\basicInfo{
+  \email{me@luojia.cc} \textperiodcentered\ 
+  \phone{(86) 150-6770-6592} \textperiodcentered\ 
+  \github[luojia65]{https://github.com/luojia65}\textperiodcentered\ 
+  \homepage{https://luojia.cc}
+}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Huazhong University of Science and Technology (HUST)}, Wuhan, China}{2018/09 -- Present}
+\textit{Undergraduate student} in Computer Science (CS), Graduation Date: 2022/06
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{Hangzhou EaseCation Information Technology Co.,Ltd.}, Hangzhou, China}{2015/05 -- Present}
+\role{Distributed Systems}{Dept. of Game Engine, Manager: Fang Yizhou}
+Taken part in building servers to process massive users for a popular mobile phone game.
+\begin{itemize}
+  \item Developed parts of server-side game engines including Nukkit. Worked together with NetEase Games.
+  \item Help creating iTX Nemisys distributing system to handle 20k+ online users with rapid data exchange.
+\end{itemize}
+
+\datedsubsection{\textbf{The Funcraft Workgroup (NPO)}, Ningbo, China}{2014/11 -- 2015/05}
+\role{Opensource Developer / Database Manager}{Development Team One}
+Built open source programs to enrich the ecosystem of game engines.
+\begin{itemize}
+  \item Help crating the CodeFunCore framework, utils for internal resource distribution and managemant.
+  \item Designed database structure and procedures for Funcraft, later used in EaseCation to carry 29m+ users.
+\end{itemize}
+
+\section{\faBars\ Projects}
+\datedsubsection{\textbf {Nukkit Game Engine}}{https://github.com/nukkit/nukkit}
+Popular feature-rich commercial server side game engine with good ecosystem. 700+ stars on GitHub.
+\begin{itemize}
+  \item Full support for complex game logic and client editions with a developer-friendly plugin system.
+  \item Java's popular Netty based network layer, capable to iTX Synapse server grouping protocol.
+  \item Online for years; commented "Good" by studio in NetEase; adopted by 24serv, a Russian VPS host.
+\end{itemize}
+
+\datedsubsection{\textbf {Coruscant (WIP)}}{https://github.com/luojia65/coruscant}
+Experimental game engine library. Contains data serialization, noise generation and file formats by now.
+\begin{itemize}
+  \item Supports Rust-favored Serde framework, serialize NBT format up to 790 megabytes per second.
+  \item Planned to use SIMD instructions to noise generation, UTF-8 validation and performing string unescape. 
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item \textbf {Programming Languages:} in favor of Rust. Comfortable with Kotlin/Go/Java/MySQL/C\#/Assembly.
+  \item \textbf {Rust: 1 year} of experience. Familiar with Mio/Serde for network, Embedded-Hal for embedded. Learning Vulkano/Actix-Web. Major use in both exercising, learning algorithms and building projects.
+  \item \textbf {SIMD:} understand the FastJSON algorithm and simple accelerations, learning SIMD for cryptography. Familiar with x86\_64 sse/avx, both intrinsics and assembly; learning arm neon and RISC-V's V extension.
+  \item \textbf {Commercial Projects:} good on them. Experienced in maintaining and improving security system for massive users. Sensitive on common demands and designs for large scale projects.
+  \item \textbf {Opensource:} very active on community. Submitted RFC 2517 to the Rust programming language. Active to share exercise projects on GitHub. Publish open source crates on crates.io website.
+  \item \textbf {Writing:} published articles on columns, have a good responsibility on translating esp. proper names.
+  \item \textbf {Developing Tools:} fluent on VSCode, comfortable with JetBrains IDEs.
+\end{itemize}
+
+\section{\faHeartO\ Honors and Awards}
+\datedline{Rust Internals: \textit {New User of the Month Award}; 24 person per year}{2018/08}
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item My real name is Jiang Zhouqi; Luo Jia is my penname.
+  \item Blog: https://luojia.cc (not frequently updated)
+  \item GitHub: https://github.com/luojia65
+  \item Zhihu column: https://zhuanlan.zhihu.com/c\_1078248076300521472
+  \item Languages: English - Maybe fluent, Mandarin - Native speaker, Russian - Only some from co-working
+  \item Play several traditional Chinese instruments
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
